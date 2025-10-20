@@ -37,7 +37,7 @@ Here's a little about each of you:
 - {full_name(mentee)} is a sixth form student preparing for university applications.  
 - {full_name(mentor)} is a {mentor['year']} Year {mentor['course']} student at Imperial College London and will be supporting {first_name(mentee)} throughout the UCAS process.  
 
-We encourage you to get in touch and begin working together, making the most of this opportunity to share knowledge and build a supportive mentoring relationship. If you require any assistance in arranging meetings or have any questions, please don't hesitate to contact us.  
+We encourage you to get in touch and begin working together, making the most of this opportunity to share knowledge and build a supportive mentoring relationship. If you require any assistance or have any questions, please don't hesitate to contact us.  
 
 Mentor's email: {mentor_email(mentor)}  
 Mentee's email: {mentee['email']}  

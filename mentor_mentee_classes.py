@@ -49,7 +49,8 @@ class Mentee:
                     'What_subjects_/_courses_are_you_interested_in_studying_at_university', 
                     None
                 )
-
+            if "Business/EFDS (Economics, Finance and Data Science)" in raw_subjects:
+                raw_subjects = raw_subjects.replace("Business/EFDS (Economics, Finance and Data Science)", "Business/EFDS")
             if raw_subjects:
                 self.interested_subjects = [
                     item.strip() 

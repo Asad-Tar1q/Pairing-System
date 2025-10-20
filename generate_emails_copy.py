@@ -32,11 +32,11 @@ Firstly, thank you {full_name(mentee)}, for signing up for the UCAS Support Serv
 {first_name(mentor)}, I'd like to introduce to you {full_name(mentee)}, who is a diligent sixth form student also aspiring to study {mentor['course']} and we found you are a perfect match to support {first_name(mentee)} in {his_her} endeavours. 
 
 I hope you both get acquainted with each other and make this journey a smooth and rewarding experience.
-If you require any support with setting up meetings or anything else, please feel free to get in touch. 
+If you require any support or anything else, please feel free to get in touch.
 
-Mentor’s email: {mentor_email(mentor)}
+Mentor's email: {mentor_email(mentor)}
 
-Mentee’s email: {clean_email(mentee['email'])}
+Mentee's email: {clean_email(mentee['email'])}
 
 Wishing you all the best,
 STEM Muslims"""
@@ -56,7 +56,7 @@ def generate_emails():
         mentees = pair["mentees"]
         
         folder = os.path.join(os.getcwd(), 'emails', full_name(mentor).replace(' ', '_'))
-        os.mkdir(folder)
+        os.makedirs(folder, exist_ok=True)
         os.mkdir(os.path.join(folder, "mentees_details"))
 
         # Save mentor details
